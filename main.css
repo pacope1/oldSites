@@ -1,0 +1,523 @@
+@charset "utf-8";
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes fadeOutUp {
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+header {
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    font-family: electrolize;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 30pt;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+
+.navMobile {
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.dropNav {
+    width: 100vw;
+    display: none;
+    border-collapse: collapse;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.linkContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: hsla(0, 0%, 28%, 0.50);
+    border-collapse: collapse;
+}
+
+.linkContainer:hover {
+    background-color: #D5B359;
+}
+
+.navLink {
+    color: #FFFFFF;
+    font-family: electrolize;
+    font-style: normal;
+    font-weight: 400;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.navButton {
+    width: 30%;
+    color: #FFFFFF;
+    font-family: cutive;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-collapse: collapse;
+    background-color: hsla(0, 0%, 28%, 0.50);
+    padding-bottom: 10px;
+    font-size: medium;
+}
+
+.navButton:hover {
+    background-color: #D5B359;
+}
+
+.welcomeContainer {
+    width: 100vw;
+    background-image: url(../../images/headerImage.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.name {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: electrolize;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 40pt;
+
+}
+
+.titleBreak {
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-top: thin solid #FFFFFF;
+    border-bottom: thin solid #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.subHeading {
+    color: #FFFFFF;
+    font-family: cutive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: small;
+    margin-top: 2vh;
+}
+
+.aboutMe {
+    width: 100%;
+    border-bottom: medium solid rgba(228, 77, 38, 1.00);
+}
+
+.aboutContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.secBreak {
+    width: 90%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-top: thin solid #D5B359;
+    border-bottom: thin solid #D5B359;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+}
+
+.bodyText {
+    color: #000000;
+    font-family: cutive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    font-size: small;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.highLight {
+    color: #D4B14E;
+}
+
+.contact {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageIcon {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.skills {
+    width: 100%;
+    border-bottom: medium solid rgba(228, 77, 38, 1.00);
+}
+
+.skillsContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.skillTable {
+    width: 90%;
+    text-align: center;
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+}
+
+.skillIcon {
+    width: 75px;
+    height: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.softSkills {
+    font-family: cutive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: small;
+    margin-bottom: 5%;
+
+}
+
+.experience {
+    width: 100%;
+    border-bottom: medium solid rgba(228, 77, 38, 1.00);
+}
+
+.expContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.jobTitle {
+    font-family: electrolize;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: large;
+    padding-top: 2vh;
+}
+
+.jobDate {
+    font-family: cutive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: small;
+}
+
+.expbodyText {
+    color: #000000;
+    font-family: cutive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: small;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.education {
+    width: 100%;
+    border-bottom: medium solid rgba(228, 77, 38, 1.00);
+}
+
+.eduContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.references {
+    width: 100%;
+    border-bottom: medium solid rgba(228, 77, 38, 1.00);
+}
+
+.refContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contactLink {
+    color: rgba(212, 177, 78, 1.00);
+}
+
+.contactLink:hover {
+    color: rgba(228, 77, 38, 1.00);
+}
+
+.portfolio {
+    width: 100%;
+    border-bottom: medium solid rgba(228, 77, 38, 1.00);
+}
+
+.subHeadProgram {
+    text-align: center;
+    font-family: electrolize;
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.vidContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.video {
+    width: 95%;
+    height: 40vh;
+    border: thick inset #E44D26;
+}
+
+.portContainer {
+    width: 100%;
+}
+
+.portCard {
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeOut 2s ease-out;
+    animation-delay: 8s;
+    width: 90%;
+    margin-bottom: 5vh;
+}
+
+.mySlides {
+    width: 100%;
+    animation: fadeIn 2s ease-in;
+    border: thick inset #E44D26;
+}
+
+.copyRight {
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-family: cutive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: x-small;
+}
+.nonMobile {
+    display: none;
+}
+
+@media screen and (min-width:767px){
+h1 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 40pt;
+}
+.linkContainer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+}
+
+
+.name {
+    font-size: 45pt;
+
+
+}
+.titleBreak {
+    border-top-width: medium;
+    border-bottom-width: medium;
+    width: 75%;
+
+}
+.subHeading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: large;
+
+}
+.bodyText {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+.mobile {
+    display: none;
+}
+.nonMobile {
+    display: table;
+}
+.contact {
+    margin-top: 0px;
+
+}
+
+.imageIcon {
+    width: 125px;
+}
+.skillIcon {
+    width: 100px;
+    height: 100px;
+
+}
+.softSkills {
+    font-size: large;
+}
+.jobTitle {
+    font-size: 20pt;
+
+
+}
+.jobDate {
+    font-size: large;
+}
+.expbodyText {
+    font-size: large;
+}
+.subHeadProgram {
+    font-size: x-large;
+
+}
+.copyRight {
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:992px){
+.vidContainer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video {
+    height: 60vh;
+    width: 100%;
+}
+.portContainer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+}
